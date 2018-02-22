@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Application-->
+        <scene sceneID="JPo-4y-FX3">
+            <objects>
+                <application id="hnw-xV-0zn" sceneMemberID="viewController">
+                    <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6"/>
+                    <connections>
+                        <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
+                    </connections>
+                </application>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="SecureUnlock" customModuleProvider="target"/>
+                <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
+                <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="75" y="0.0"/>
+        </scene>
+        <!--Window Controller-->
+        <scene sceneID="R2V-B0-nI4">
+            <objects>
+                <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                        <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+                        <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
+                        <rect key="contentRect" x="196" y="240" width="296" height="355"/>
+                        <rect key="screenRect" x="0.0" y="0.0" width="1680" height="1027"/>
+                        <value key="minSize" type="size" width="296" height="355"/>
+                        <value key="maxSize" type="size" width="296" height="355"/>
+                        <connections>
+                            <outlet property="delegate" destination="B8D-0N-5wS" id="98r-iN-zZc"/>
+                        </connections>
+                    </window>
+                    <connections>
+                        <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
+                    </connections>
+                </windowController>
+                <customObject id="Oky-zY-oP4" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-16" y="250"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hIz-AP-VOD">
+            <objects>
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="SecureUnlock" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
+                        <rect key="frame" x="0.0" y="0.0" width="296" height="355"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ruG-lQ-YEQ">
+                                <rect key="frame" x="14" y="13" width="131" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Save Password" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="F8R-9b-Mex">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="savePassword:" target="XfG-lQ-9wD" id="uHP-Pj-P8w"/>
+                                </connections>
+                            </button>
+                            <secureTextField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pbd-qE-D6L">
+                                <rect key="frame" x="20" y="49" width="256" height="22"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <secureTextFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" usesSingleLineMode="YES" id="iWF-A0-tOR">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <allowedInputSourceLocales>
+                                        <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                    </allowedInputSourceLocales>
+                                </secureTextFieldCell>
+                            </secureTextField>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ntp-eP-y0A">
+                                <rect key="frame" x="20" y="79" width="256" height="256"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="WFd-Zm-6Ni"/>
+                            </imageView>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cvI-oL-XHy">
+                                <rect key="frame" x="151" y="13" width="131" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Generate QR" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="gR9-AE-9aQ">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                                <connections>
+                                    <action selector="generateQRCode:" target="XfG-lQ-9wD" id="QUe-p6-jtb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </view>
+                    <connections>
+                        <outlet property="codeImageView" destination="ntp-eP-y0A" id="pGh-1A-9iJ"/>
+                        <outlet property="passwordSecureTextField" destination="Pbd-qE-D6L" id="DZR-HI-Nsz"/>
+                    </connections>
+                </viewController>
+                <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-17" y="697.5"/>
+        </scene>
+    </scenes>
+</document>

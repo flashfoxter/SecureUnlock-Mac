@@ -1,0 +1,383 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		186D1E141FDF23F600FCEBC7 /* KeychainAccess.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 186D1E0F1FDF23EB00FCEBC7 /* KeychainAccess.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		186D1E1F1FDF2C6900FCEBC7 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 186D1E0F1FDF23EB00FCEBC7 /* KeychainAccess.framework */; };
+		1875792B1FE0363F002D1D62 /* EFQRCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1875792A1FE0363F002D1D62 /* EFQRCode.framework */; };
+		1875792E1FE03643002D1D62 /* EFQRCode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 1875792A1FE0363F002D1D62 /* EFQRCode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18EA865E203F21F60009D0F4 /* liboath.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EA865D203F21F60009D0F4 /* liboath.dylib */; };
+		7939E9E3A633BD13C4B40290 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7989D0A3479427D72142CB81 /* ViewController.swift */; };
+		7985CAA9746F4AFA60C63DBE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D19483AB8536104A0D689D /* AppDelegate.swift */; };
+		798E83610F51F3F65CB18DAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C31FC9360B47038D3F500C /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		186D1E171FDF23F600FCEBC7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				1875792E1FE03643002D1D62 /* EFQRCode.framework in Embed Frameworks */,
+				186D1E141FDF23F600FCEBC7 /* KeychainAccess.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		186D1E0F1FDF23EB00FCEBC7 /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/Mac/KeychainAccess.framework; sourceTree = "<group>"; };
+		1875791C1FE02FBF002D1D62 /* SecureUnlock-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecureUnlock-Bridging-Header.h"; sourceTree = "<group>"; };
+		187579221FE031B0002D1D62 /* oath.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = oath.h; path = "../../../../../usr/local/Cellar/oath-toolkit/2.6.2/include/liboath/oath.h"; sourceTree = "<group>"; };
+		1875792A1FE0363F002D1D62 /* EFQRCode.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EFQRCode.framework; path = Carthage/Build/Mac/EFQRCode.framework; sourceTree = "<group>"; };
+		18EA865D203F21F60009D0F4 /* liboath.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liboath.dylib; path = "../../../../usr/local/Cellar/oath-toolkit/2.6.2/lib/liboath.dylib"; sourceTree = "<group>"; };
+		791026BFEDDC675D283885BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		79124FC6B9C86CECBC830739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.info; path = Info.plist; sourceTree = "<group>"; };
+		7989D0A3479427D72142CB81 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79D19483AB8536104A0D689D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		79F650AB2F78C0425CC7421F /* SecureUnlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecureUnlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		794B612476F2EA05B5676EA1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18EA865E203F21F60009D0F4 /* liboath.dylib in Frameworks */,
+				1875792B1FE0363F002D1D62 /* EFQRCode.framework in Frameworks */,
+				186D1E1F1FDF2C6900FCEBC7 /* KeychainAccess.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		186D1E051FDF239700FCEBC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18EA865D203F21F60009D0F4 /* liboath.dylib */,
+				1875792A1FE0363F002D1D62 /* EFQRCode.framework */,
+				186D1E0F1FDF23EB00FCEBC7 /* KeychainAccess.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		187579211FE031A6002D1D62 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				187579221FE031B0002D1D62 /* oath.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		790470A5AE5637E109E504FF /* SecureUnlock */ = {
+			isa = PBXGroup;
+			children = (
+				79124FC6B9C86CECBC830739 /* Info.plist */,
+				79D19483AB8536104A0D689D /* AppDelegate.swift */,
+				79C31FC9360B47038D3F500C /* Main.storyboard */,
+				7989D0A3479427D72142CB81 /* ViewController.swift */,
+			);
+			path = SecureUnlock;
+			sourceTree = "<group>";
+		};
+		799954E0D9F3C31696B62A33 = {
+			isa = PBXGroup;
+			children = (
+				187579211FE031A6002D1D62 /* Headers */,
+				186D1E051FDF239700FCEBC7 /* Frameworks */,
+				79E2B4CBA75C49A748C5D1C3 /* Products */,
+				790470A5AE5637E109E504FF /* SecureUnlock */,
+				1875791C1FE02FBF002D1D62 /* SecureUnlock-Bridging-Header.h */,
+			);
+			sourceTree = "<group>";
+		};
+		79E2B4CBA75C49A748C5D1C3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79F650AB2F78C0425CC7421F /* SecureUnlock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79F29267044278CFD24013E8 /* SecureUnlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7916EDE88835F2A3D940B886 /* Build configuration list for PBXNativeTarget "SecureUnlock" */;
+			buildPhases = (
+				79F7C6A2CABBF71E88F8FCB2 /* Sources */,
+				794B612476F2EA05B5676EA1 /* Frameworks */,
+				79B3CA79841DA97C8E320AD2 /* Resources */,
+				186D1E171FDF23F600FCEBC7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecureUnlock;
+			productName = SecureUnlock;
+			productReference = 79F650AB2F78C0425CC7421F /* SecureUnlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79CF9BE1B2A37AD17E9433F9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "___FULLUSERNAME___";
+				TargetAttributes = {
+					79F29267044278CFD24013E8 = {
+						LastSwiftMigration = 0920;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 792B3BFD16C298D11B01B654 /* Build configuration list for PBXProject "SecureUnlock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 799954E0D9F3C31696B62A33;
+			productRefGroup = 79E2B4CBA75C49A748C5D1C3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79F29267044278CFD24013E8 /* SecureUnlock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79B3CA79841DA97C8E320AD2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				798E83610F51F3F65CB18DAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79F7C6A2CABBF71E88F8FCB2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7985CAA9746F4AFA60C63DBE /* AppDelegate.swift in Sources */,
+				7939E9E3A633BD13C4B40290 /* ViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		79C31FC9360B47038D3F500C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				791026BFEDDC675D283885BE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		797405C912DD9D198965E3CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SecureUnlock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.wenyu.SecureUnlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SecureUnlock-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		79895A762DBD366D3F074F75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SYMROOT = "/Users/y/Library/Developer/Xcode/DerivedData/SecureUnlock-gavljekfrbwhpbclttjnsawhkbhs/Build/Products";
+			};
+			name = Release;
+		};
+		79B595FF23609087B2253376 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = SecureUnlock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = org.wenyu.SecureUnlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SecureUnlock-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		79F691B8444A0575A0C1CE28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SYMROOT = "/Users/y/Library/Developer/Xcode/DerivedData/SecureUnlock-gavljekfrbwhpbclttjnsawhkbhs/Build/Products";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7916EDE88835F2A3D940B886 /* Build configuration list for PBXNativeTarget "SecureUnlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79B595FF23609087B2253376 /* Debug */,
+				797405C912DD9D198965E3CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		792B3BFD16C298D11B01B654 /* Build configuration list for PBXProject "SecureUnlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79F691B8444A0575A0C1CE28 /* Debug */,
+				79895A762DBD366D3F074F75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79CF9BE1B2A37AD17E9433F9 /* Project object */;
+}
